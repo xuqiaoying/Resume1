@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.wrap aside{
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    background: #607D8B;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+     z-index: 2; 
+}
+aside h2{
+    font-size: 30px;
+    color: #fbfbfb;
+    letter-spacing: 2px;
+    font-style: oblique;
+    margin: 35px 10px;
+}
+aside .nav li{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+aside .nav li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 40px;
+    display: block;
+    transition: .5s;
+    background: rgba(180,50,94,0.69);
+    z-index: -1;
+}
+aside .nav li:hover::before{
+    width: 100%;
+    /*height: 40px;*/
+}
+aside .nav li a.item.active{
+    color: #f9c427;
+}
+aside .nav li a{
+    display: block;
+    color: #fbfbfb;
+    margin: 20px 10px 20px 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px; 
+    cursor: pointer;
+}
+
+.footer .fa{
+    font-size: 25px;
+}
+.footer ul{
+    text-align: center;
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+    transition: .5s;
+    /*animation: floating linear infinite;*/
+}
+/*@keyframes floating{
+    from{
+        transform: translateY(30%);
+    }
+    to{
+        transform: translateY(-30%)；
+    }
+}*/
+.footer ul li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #abacac;
+}
+.footer .email{
+    background-color: #00ab6c;
+}
+.footer .github{
+    background-color: #fafafa;;
+}
+.footer .weixin{
+    background-color: #fafafa;
+}
+.footer .weibo{
+    background-color: #960e0e;
+}
+.fa-weixin{
+    color: #62b900;
+}
+.fa-weibo{
+    color: #fff;
+}
+.fa-envelope{
+    color: #fafafa;
+}
+.fa-github{
+    color: #333;
+}
